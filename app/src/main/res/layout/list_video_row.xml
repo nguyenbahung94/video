@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/layout_ofimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/image_bg"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/layout_ofimage"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+
+            <View
+                android:id="@+id/viewconter"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="#f40b0b" />
+
+            <TextView
+                android:id="@+id/name_ofvideo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@id/viewconter"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/time_ofvideo"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/viewconter"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/mprogessbar"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true" />
+
+            <Button
+                android:id="@+id/btn_CancelVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/mprogessbar"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="cancel" />
+
+            <Button
+                android:id="@+id/btn_downVideo"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_above="@id/mprogessbar"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/btn_CancelVideo"
+                android:text="Download" />
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/btn_PauseVideo"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_above="@id/mprogessbar"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/btn_CancelVideo"
+                android:text="Pause" />
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/btn_ResumeVideo"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_above="@id/mprogessbar"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/btn_CancelVideo"
+                android:text="Resume" />
+
+            <TextView
+                android:id="@+id/tvcountfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/mprogessbar"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/btn_downVideo"
+                android:gravity="center"
+                android:text="text" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
