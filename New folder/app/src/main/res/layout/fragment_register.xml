@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@drawable/background" />
+
+    <LinearLayout
+        android:id="@+id/ll_imageofregister"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/login" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_imageofregister">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ProgressBar
+                android:id="@+id/progress_barofregister1"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="45dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_drawable_vertical"
+                android:visibility="visible" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:visibility="visible">
+
+                <View
+                    android:id="@+id/viewregister"
+                    android:background="@null"
+                    android:alpha="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/edt_company1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="ABOUT OUR COMPANY"
+                    android:textColor="#100f0f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_company1"
+                    android:gravity="center"
+                    android:text="Description" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/circledefault" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister1"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/edt_company2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="ABOUT OUR COMPANY"
+                    android:textColor="#100f0f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_company2"
+                    android:gravity="center"
+                    android:text="Description" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/circledefault"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_barofregister2"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="45dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_drawable_vertical"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister2"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/edt_company3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="ABOUT OUR COMPANY"
+                    android:textColor="#100f0f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_company3"
+                    android:gravity="center"
+                    android:text="Description" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/circledefault"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_barofregister3"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister2"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="45dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_drawable_vertical"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister3"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/edt_company4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="ABOUT OUR COMPANY"
+                    android:textColor="#100f0f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_company4"
+                    android:gravity="center"
+                    android:text="Description" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/circledefault"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_barofregister4"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister3"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="45dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_drawable_vertical"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister4">
+
+                <TextView
+                    android:id="@+id/edt_company5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="ABOUT OUR COMPANY"
+                    android:textColor="#100f0f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_company5"
+                    android:gravity="center"
+                    android:text="Description" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/circledefault"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_barofregister5"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister4"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="45dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_drawable_vertical" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister5">
+
+                <TextView
+                    android:id="@+id/edt_company6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="ABOUT OUR COMPANY"
+                    android:textColor="#100f0f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_company6"
+                    android:gravity="center"
+                    android:text="Description" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/circledefault"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_barofregister6"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister5"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="45dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_drawable_vertical" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/progress_barofregister6">
+
+                <TextView
+                    android:id="@+id/edt_company7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="ABOUT OUR COMPANY"
+                    android:textColor="#100f0f" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_company7"
+                    android:gravity="center"
+                    android:text="Description" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/circledefault"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
